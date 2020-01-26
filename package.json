@@ -21,9 +21,9 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
   "peerDependencies": {
-    "react": "^16.9.0"
+    "react": "^16.9.0",
+    "userbase-js": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -33,6 +33,9 @@
     "@types/react": "^16.7.22",
     "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "react": "^16.9.0",
     "react-scripts": "^3.0.1",
     "react-test-renderer": "^16.9.0",
@@ -44,5 +47,10 @@
     "rollup-plugin-typescript2": "^0.19.2",
     "rollup-plugin-url": "^2.1.0",
     "typescript": "^3.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
