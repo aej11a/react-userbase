@@ -2,7 +2,7 @@
   "name": "react-userbase-workspace",
   "homepage": "https://aej11a.github.io/react-userbase",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "dependencies": {
     "react": "react",
     "react-userbase": "^1.0.2",

@@ -58,6 +58,14 @@ const Example = () => {
 };
 ```
 
+## Example Project
+
+Clone the repo locally and add a `.env.local` file at `react-userbase/example/.env.local`
+
+In that file, add `REACT_APP_USERBASE_APP_ID=<YOUR USERBASE APP ID>`
+
+Start the dev server to test. You can see a few different uses of the hook in `react-userbase/example/src/App.js`
+
 ## License
 
 MIT © [aej11a](https://github.com/aej11a)
