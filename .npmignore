@@ -3,6 +3,7 @@
 tsconfig.json
 tsconfig.test.json
 src
+.idea
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
