@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-userbase-workspace"]=this["webpackJsonpreact-userbase-workspace"]||[]).push([[0],[function(e,s,t){e.exports=t(1)},function(e,s,t){"use strict";t.r(s);t(2);window.location.href="https://github.com/aej11a/react-userbase"},function(e,s,t){}],[[0,1]]]);
+//# sourceMappingURL=main.d3cbc7ae.chunk.js.map
