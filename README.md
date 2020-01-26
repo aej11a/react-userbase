@@ -6,26 +6,55 @@
 
 ## Install
 
+You need to install Userbase separately from this package
+
 ```bash
-yarn add react-userbase
+yarn add userbase react-userbase
 ```
 
 or
 
 ```bash
-npm install react-userbase --save
+npm install userbase react-userbase --save
 ```
 
 ## Usage
 
+The hook takes arguments like these:
+
+```tsx
+useUserbase(action, options?)
+```
+
+where action is one of the Userbase functions from their [SDK](https://userbase.com/docs/sdk/) and `options` is an object of options to pass to the function.
+
+The hook returns an array with a function and an object as shown in the example below.
+
+The generated function will trigger Userbase function, and the object properties will track it.
+
+You can also pass options to the function when you call it, as shown below.
+
+**Note**: it is reccomended to initialize your app using userbase.init directly from userbase, in your app's `index.js`. You can see this in the example app.
+
 ```tsx
 import * as React from "react";
-
-import { useMyHook } from "react-userbase";
+import { useUserbase } from "react-userbase";
 
 const Example = () => {
-  const example = useMyHook();
-  return <div>{example}</div>;
+  const [signIn, { response, loading, error }] = useUserbase("signIn");
+  const [signOut, { response: signOutResponse, loading: signOutLoading, error: signOutError = useUserbase("signOut");
+
+  const username = "aej11a"
+  const password = "Password123"
+
+  useEffect(() => {
+    console.log(response, loading, error)
+  })
+
+  if(loading) return <LoadingIndicator/>
+  return (
+    <button onClick={() => signIn({username, password})}>Sign In</button>
+  )
 };
 ```
 
