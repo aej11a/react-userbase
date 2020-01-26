@@ -65,3 +65,5 @@ MIT © [aej11a](https://github.com/aej11a)
 ---
 
 This hook was created using [create-react-hook](https://github.com/hermanya/create-react-hook).
+
+Excellent explanation of the object syntax instead of using an array: https://github.com/zeit/swr/issues/9#issuecomment-547224457
