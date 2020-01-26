@@ -1,7 +1,11 @@
 {
   "name": "react-userbase-workspace",
+  "homepage": "https://aej11a.github.io/react-userbase",
+  "license": "MIT",
   "version": "1.0.0",
   "dependencies": {
+    "react": "link:../node_modules/react",
+    "react-userbase": "link:..",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -9,7 +13,6 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-hook-form": "^4.7.0",
     "react-scripts": "3.3.0",

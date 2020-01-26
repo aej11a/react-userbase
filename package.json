@@ -52,5 +52,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "dependencies": {
+    "userbase-js": "^1.0.0"
   }
 }

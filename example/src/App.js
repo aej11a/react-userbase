@@ -2,10 +2,10 @@ import React from "react";
 import "./App.css";
 import { RegistrationForm } from "./components/RegistrationForm";
 import { SignInForm } from "./components/SignInForm";
-import { useUserbase } from "./hooks/useUserbase";
+import { useUserbase } from "react-userbase";
 
-const App: React.FC = () => {
-  const [signOut] = useUserbase("signOut");
+const App = () => {
+  const [signOut] = useUserbase("signIn");
 
   return (
     <div className="App">
