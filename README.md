@@ -9,13 +9,13 @@
 You need to install Userbase separately from this package
 
 ```bash
-yarn add userbase react-userbase
+yarn add userbase-js react-userbase
 ```
 
 or
 
 ```bash
-npm install userbase react-userbase --save
+npm install userbase-js react-userbase --save
 ```
 
 ## Usage
@@ -30,11 +30,11 @@ where action is one of the Userbase functions from their [SDK](https://userbase.
 
 The hook returns an array with a function and an object as shown in the example below.
 
-The generated function will trigger Userbase function, and the object properties will track it.
+The generated function will trigger its Userbase function, and the object properties will track that function's state.
 
 You can also pass options to the function when you call it, as shown below.
 
-**Note**: it is reccomended to initialize your app using userbase.init directly from userbase, in your app's `index.js`. You can see this in the example app.
+**Note**: it is reccomended to initialize your app using userbase.init directly from userbase-js, in your app's `index.js`. You can see this in the example app.
 
 ```tsx
 import * as React from "react";
