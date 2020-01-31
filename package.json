@@ -1,59 +1,53 @@
 {
-  "name": "react-userbase",
-  "version": "1.2.0",
-  "description": "React Hooks for Userbase",
-  "author": "aej11a",
-  "license": "MIT",
-  "repository": "https://github.com/aej11a/react-userbase",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
-  "scripts": {
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c",
-    "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "deploy": "gh-pages -d example/build",
-    "predeploy": "cd example && yarn install && yarn run build"
-  },
-  "peerDependencies": {
-    "react": "^16.9.0",
-    "userbase-js": "^1.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/runtime": "^7.3.1",
-    "@testing-library/react-hooks": "^3.2.1",
-    "@types/jest": "^23.3.13",
-    "@types/react": "^16.7.22",
-    "cross-env": "^5.2.0",
-    "gh-pages": "^2.0.1",
-    "husky": "^4.2.1",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1",
-    "react": "^16.9.0",
-    "react-scripts": "^3.0.1",
-    "react-test-renderer": "^16.9.0",
-    "rollup": "^1.1.2",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-typescript2": "^0.19.2",
-    "rollup-plugin-url": "^2.1.0",
-    "typescript": "^3.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
+    "name": "react-userbase",
+    "version": "1.8.0",
+    "description": "React Hooks for Userbase",
+    "author": "aej11a",
+    "license": "MIT",
+    "repository": "https://github.com/aej11a/react-userbase",
+    "main": "dist/main.js",
+    "engines": {
+        "node": ">=8",
+        "npm": ">=5"
+    },
+    "scripts": {
+        "build": "webpack"
+    },
+    "peerDependencies": {
+        "react": "^16.9.0",
+        "userbase-js": "^1.0.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-react": "^7.8.3",
+        "@babel/runtime": "^7.3.1",
+        "@testing-library/react-hooks": "^3.2.1",
+        "@types/jest": "^23.3.13",
+        "@types/react": "^16.9.19",
+        "@types/react-dom": "^16.9.5",
+        "babel-loader": "^8.0.6",
+        "babel-minify-webpack-plugin": "^0.3.1",
+        "babel-preset-react": "^6.24.1",
+        "cross-env": "^5.2.0",
+        "gh-pages": "^2.0.1",
+        "husky": "^4.2.1",
+        "prettier": "^1.19.1",
+        "pretty-quick": "^2.0.1",
+        "react": "^16.9.0",
+        "react-scripts": "^3.0.1",
+        "react-test-renderer": "^16.9.0",
+        "source-map-loader": "^0.2.4",
+        "terser-webpack-plugin": "^2.3.3",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    },
+    "dependencies": {
+        "userbase-js": "^1.0.0"
     }
-  },
-  "dependencies": {
-    "userbase-js": "^1.0.0"
-  }
 }

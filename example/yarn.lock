@@ -8364,10 +8364,10 @@ react-scripts@3.3.0:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-userbase@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-userbase/-/react-userbase-1.0.2.tgz#714a31f9016e4a45c01e73cc91047f958c2326f7"
-  integrity sha512-iXumNYflLNEHOHs3NxMQ15x5P8ZBW58XIyaqxS4x5F0dfsoMuSG2+DnWUYAO3sQ6N55DLPhUWtf4cyaOTYbNTg==
+react-userbase@^1.5.6:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/react-userbase/-/react-userbase-1.8.0.tgz#1049bae267c906df7d7dfad9ee4298af5310508c"
+  integrity sha512-vMLEm0dSaDdjqijjSJXsL8OdxrC/KvHTThxdt4nbPyjA9sLI6pywRtIBKXDjxy2Wi1mz08L1zBrVdWGVaDe3tQ==
   dependencies:
     userbase-js "^1.0.0"
 

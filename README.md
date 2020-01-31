@@ -20,6 +20,16 @@ npm install userbase-js react-userbase --save
 
 ## Usage
 
+First, wrap your app with UserbaseProvider like this:
+
+```jsx
+<UserbaseProvider appId={YOUR APP ID FROM USERBASE}>
+    <App/>
+</UserbaseProvider>
+```
+
+Then, any component within the UserbaseProvider can use the hook.
+
 The hook takes arguments like these:
 
 ```tsx
@@ -30,7 +40,7 @@ where action is one of the Userbase functions from their [SDK](https://userbase.
 
 The hook returns an array with a function and an object as shown in the example below.
 
-The generated function will trigger its Userbase function, and the object properties will track that function's state.
+The generated function will trigger its Userbase function, and the object properties will track that function's state. The generated function also returns its promise.
 
 You can also pass options to the function when you call it, as shown below.
 
@@ -57,6 +67,10 @@ const Example = () => {
   )
 };
 ```
+
+## Additional Functions
+
+This package also exports `isSignedIn() => true|false` and `getCurrentSession() => Userbase Session | null`
 
 ## Example Project
 
