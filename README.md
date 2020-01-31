@@ -44,8 +44,6 @@ The generated function will trigger its Userbase function, and the object proper
 
 You can also pass options to the function when you call it, as shown below.
 
-**Note**: it is reccomended to initialize your app using userbase.init directly from userbase-js, in your app's `index.js`. You can see this in the example app.
-
 ```tsx
 import * as React from "react";
 import { useUserbase } from "react-userbase";
@@ -68,13 +66,9 @@ const Example = () => {
 };
 ```
 
-## Additional Functions
-
-This package also exports `isSignedIn() => true|false` and `getCurrentSession() => Userbase Session | null`
-
 ## Example Project
 
-Clone the repo locally and add a `.env.local` file at `react-userbase/example/.env.local`
+Clone/download the repo locally and add a `.env.local` file at `react-userbase/example/.env.local`
 
 In that file, add `REACT_APP_USERBASE_APP_ID=<YOUR USERBASE APP ID>`
 
