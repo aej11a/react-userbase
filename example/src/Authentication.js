@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useUserbase } from "./src";
+import { useUserbase } from "react-userbase";
 import { Database } from "./Database";
 
 export const Authentication = () => {

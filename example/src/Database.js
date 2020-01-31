@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useUserbase } from "./src";
+import { useUserbase } from "react-userbase";
 
 export const Database = () => {
     const [inputValue, setInputValue] = useState(null);
