@@ -51,20 +51,27 @@ import * as React from "react";
 import { useUserbase } from "react-userbase";
 
 const Example = () => {
-  const [signIn, { response, loading, error }] = useUserbase("signIn");
-  const [signOut, { response: signOutResponse, loading: signOutLoading, error: signOutError = useUserbase("signOut");
+    const [signIn, { response, loading, error }] = useUserbase("signIn");
+    const [
+        signOut,
+        {
+            response: signOutResponse,
+            loading: signOutLoading,
+            error: signOutError
+        }
+    ] = useUserbase("signOut");
 
-  const username = "aej11a"
-  const password = "Password123"
+    const username = "aej11a";
+    const password = "Password123";
 
-  useEffect(() => {
-    console.log(response, loading, error)
-  })
+    useEffect(() => {
+        console.log(response, loading, error);
+    });
 
-  if(loading) return <LoadingIndicator/>
-  return (
-    <button onClick={() => signIn({username, password})}>Sign In</button>
-  )
+    if (loading) return <LoadingIndicator />;
+    return (
+        <button onClick={() => signIn({ username, password })}>Sign In</button>
+    );
 };
 ```
 
