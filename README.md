@@ -23,6 +23,8 @@ npm install userbase-js react-userbase --save
 First, wrap your app with UserbaseProvider like this:
 
 ```jsx
+import { UserbaseProvider } from 'react-userbase';
+
 <UserbaseProvider appId={YOUR APP ID FROM USERBASE}>
     <App/>
 </UserbaseProvider>
